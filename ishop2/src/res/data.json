@@ -1,0 +1,46 @@
+{
+   "Tovars":[
+        {
+            "name":"banana",
+            "price":"30",
+            "url":"https://catherineasquithgallery.com/uploads/posts/2021-03/1614572712_1-p-banan-na-belom-fone-1.jpg",
+            "quantity":"20"
+
+        },
+        {
+            "name":"apple",
+            "price":"40",
+            "url":"https://klike.net/uploads/posts/2022-09/1662040170_j-50.jpg",
+            "quantity":"15"
+
+        },
+        {
+            "name":"kiwi",
+            "price":"80",
+            "url":"https://econet.ru/media/413/kindeditor/image/201402/20140214140852.jpg",
+            "quantity":"49"
+
+        },
+        {
+            "name":"ice-cream",
+            "price":"90",
+            "url":"https://w.forfun.com/fetch/d9/d99aeff45c27877550b59084eab31ee8.jpeg",
+            "quantity":"8"
+
+        },
+        {
+            "name":"sausages",
+            "price":"120",
+            "url":"http://kolbaskovo.ru/wp-content/uploads/2018/05/000177_big_Sosiski-Venskie-vyssh.sort.-belkov.ob..jpg",
+            "quantity":"22"
+
+        },
+        {
+            "name":"sausage",
+            "price":"50",
+            "url":"https://main-cdn.sbermegamarket.ru/hlr-system/-51/884/871/510/111/2/100027308938b0.jpg",
+            "quantity":"3"
+
+        }
+   ]
+}
