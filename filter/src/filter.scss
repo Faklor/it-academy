@@ -1,0 +1,11 @@
+.filter{
+    div{
+        height: 15em;
+        overflow-y: scroll;
+        background-color: black;
+        ul{
+            list-style: none;
+            color:#eee;
+        }
+    }
+}
