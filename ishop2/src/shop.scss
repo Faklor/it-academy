@@ -2,11 +2,16 @@
     text-align: center;
     margin:0;
     padding: 0;
-
+    cursor: default;
+    button{
+        padding: 1em 2em;
+        cursor:pointer;
+    }
 
     table{
         margin: 0 auto 0 auto;
         tr{
+            cursor: pointer;
             th{
                 border-bottom: 1px solid black;
             }
@@ -21,6 +26,33 @@
             width: 5em;
             height: 5em;
             object-fit: cover;
+        }
+    }
+    .card{
+        margin-top: 3em;
+        img{
+            width: 10em;
+        }
+
+    }
+    .addNewProduct{
+        width: 20em;
+        margin:3em auto 3em auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        h1{
+            grid-column: 1/4;
+        }
+    }
+    .editProduct{
+        width: 20em;
+        margin:3em auto 3em auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        h1{
+            grid-column: 1/4;
         }
     }
 }
