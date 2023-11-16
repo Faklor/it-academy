@@ -1,17 +1,16 @@
 import './App.css'
-import RainbowFrame from './rainbowFrame'
+import BR2JSX from './br2jsx'
 
 function App() {
 
-  let colors = ['red','orange', 'yellow','green', '#00BFFF', 'blue', 'purple']
+  let text="первый<br>второй<br/>третий<br />последний"
 
   return (
     <div className="App">
-      <RainbowFrame colors={colors}>
-        Hello!
-      </RainbowFrame>
+      <BR2JSX text={text}/>
     </div>
   );
 }
 
 export default App
+ 
