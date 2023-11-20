@@ -58,6 +58,7 @@ export default class Shop extends Component{
             <>
              <h1>Product Shop</h1>
                 <table>
+                    <thead>
                     <tr>
                         <th>Product</th>
                         <th>Price</th>
@@ -65,8 +66,10 @@ export default class Shop extends Component{
                         <th>Quantity</th>
                         <th>Control</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     {prod}
-                   
+                    </tbody>
                 </table>
             </>
         )

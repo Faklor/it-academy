@@ -5,7 +5,7 @@ export default class Product extends Component{
     render() {  
               
         return (
-            <>
+            
                <tr className="tovar" onClick={this.props.setActiveProduct} style={{backgroundColor: this.props.backColor}}>
                 <td>{this.props.name}</td>
                 <td>{this.props.price}</td>
@@ -14,7 +14,7 @@ export default class Product extends Component{
                 <td><button onClick={this.props.buttoEvent}>Delete</button></td>
                </tr>
                    
-            </>
+            
         )
     }
   }
