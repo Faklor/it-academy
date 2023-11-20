@@ -16,11 +16,12 @@ export default class br2jsx extends Component{
         //     //     <br/>
         //     // </>
         // })
-        this.props.text.split(/<br *\/?>/).forEach(element => {
-            a.push(element)
-            if(element){
-                a.push(<br/>)
+        this.props.text.split(/<br *\/?>/).forEach((element, key) => {
+            if(key){
+                a.push(<br key={key}/>)
             }
+            a.push(element)
+            
         });
         
 
