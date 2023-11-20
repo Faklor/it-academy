@@ -1,5 +1,5 @@
 import './filter.scss'
-const {Component, createRef} = require('react')
+const {Component} = require('react')
 
 
 export default class Filter extends Component{
@@ -26,25 +26,19 @@ export default class Filter extends Component{
         else{
             this.setState({musWords:  this.props.mus})
         } 
+       
     }
     inputMus=(props)=>{
         //---------------------------------------
         this.setState({val:props.target.value})
         //---------------------------------------
-        this.state.musWords.map(i=>{
-            if(this.state.val === ''){
-                this.setState({musWords: this.props.mus})
-                
-                console.log('null')
-            }
-            else{
-                if(i.includes(this.state.val)){
-                    this.setState({musWords: this.state.musWords.filter((i)=>{return i.includes(this.state.val)})})
-                   
-                }
-            }
-            
-         })
+        if(props.target.value === ''){
+            this.setState({musWords: this.props.mus})
+        }
+        else{
+            this.setState({musWords:this.state.musWords.filter((i)=>{ return i.includes(props.target.value)})})
+        }
+        
 
     }
     clearFunction=()=>{
