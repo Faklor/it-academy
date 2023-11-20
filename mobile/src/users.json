@@ -1,0 +1,32 @@
+{
+    "Users":[
+        {
+            "family":"Иванов",
+            "name":"Иван",
+            "secondName":"Иванович",
+            "balance":200,
+            "status":true
+        },
+        {
+            "family":"Сидоров",
+            "name":"Сидор",
+            "secondName":"Сидорович",
+            "balance":250,
+            "status":true
+        },
+        {
+            "family":"Петров",
+            "name":"Пётр",
+            "secondName":"Петрович",
+            "balance":180,
+            "status":true
+        },
+        {
+            "family":"Григоьев",
+            "name":"Григорий",
+            "secondName":"Григорьевич",
+            "balance":-220,
+            "status":false
+        }
+    ]
+}

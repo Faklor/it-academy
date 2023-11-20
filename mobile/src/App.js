@@ -1,25 +1,57 @@
+import { Component } from 'react'
 import './App.css'
-import DoubleButton from './DoubleButton'
-import hoc from './withRainbowFrame'
+import User from './User'
+import users from './users.json'
+import Immutable from 'immutable'
 
 
+export default class App extends Component{
+  constructor(){
+    super()
 
-function App() {
+    this.state = {
+      usersState:users.Users.map((i,index)=>{
+        return <User>
+  
+        </User>
+      })
+    }
 
-  let colors = ['red','orange', 'yellow','green', '#00BFFF', 'blue', 'purple']
+  }
 
-  let FramedDoubleButton=hoc(DoubleButton)
+  renderUsers =()=>{
+   
+  }
 
-  return (
-    <div className="App">
-      <DoubleButton caption1 ={'однажды'} caption2={'пору'} cbPressed={num=>{return alert(num)} }>
-        в студеную зимнюю
-      </DoubleButton>
-      <FramedDoubleButton caption1="я из лесу" caption2="мороз" cbPressed={ num => alert(num) } colors={colors}>
-        вышел, был сильный
-      </FramedDoubleButton>
-    </div>
-  );
+  render(){
+    
+
+
+    return(
+      <div className='App'>
+        <header>
+          <nav>
+            <button onClick={this.renderUsers}>Все</button>
+            <button onClick={this.renderUsers}>Активаные</button>
+            <button onClick={this.renderUsers}>Заблокированные</button>
+          </nav>
+        </header>
+
+        <table>
+          <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Баланс</th>
+            <th>Статус</th>
+            <th>Редактировать</th>
+            <th>Удалить</th>
+          </tr>
+            {this.state.usersState}
+        </table>
+      </div>
+    )
+  }
+
+
 }
-
-export default App
