@@ -1,5 +1,5 @@
 import './App.css'
-import Filter from './filter'
+import FilterHook from './filterhook'
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <Filter arraY={arraY}/>
+      <FilterHook arraY={arraY}/>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.FilterArr {
+    
+    height: 150px;
+    border: 1px solid;
+    overflow: auto;
+    margin: 10px 5px;
+    background-color: black;
+    color:#eee;
+}
+
+p,
+input {
+    margin: 0px 5px;
+}
